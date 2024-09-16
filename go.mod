@@ -4,7 +4,7 @@ go 1.23
 
 require (
 	github.com/pangum/config v0.0.6
-	github.com/pangum/pangu v1.4.2
+	github.com/pangum/pangu v1.4.3
 	github.com/philchia/agollo/v4 v4.1.5
 )
 
