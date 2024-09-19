@@ -2,32 +2,44 @@ package core
 
 import (
 	"context"
-	"fmt"
 
+	"github.com/goexl/apollo"
 	"github.com/pangum/config"
-	"github.com/philchia/agollo/v4"
 )
 
 var _ config.Loader = (*Loader)(nil)
 
 type Loader struct {
-	apollo agollo.Client
+	client *apollo.Client
 }
 
-func NewLoader(apollo agollo.Client) *Loader {
+func NewLoader(client *apollo.Client) *Loader {
 	return &Loader{
-		apollo: apollo,
+		client: client,
 	}
 }
 
-func (l *Loader) Local() bool {
+func (*Loader) Local() bool {
 	return false
 }
 
-func (l *Loader) Load(ctx context.Context, target any) (loaded bool, err error) {
-	fmt.Println(l.apollo.GetContent(agollo.WithNamespace("logging")))
-	fmt.Println(l.apollo.GetContent())
-	fmt.Println(l.apollo.GetString("level", agollo.WithNamespace("logging")))
+func (*Loader) Extensions() []string {
+	return []string{
+		// !不限制扩展名
+	}
+}
+
+func (l *Loader) Load(ctx context.Context, target *map[string]any) (loaded bool, err error) {
+	loader := l.client.Loader().Context(ctx)
+	loader.Namespace("application") // 默认命令空间
+	loader.Namespace("logging.yaml")
+	loader.Namespace("logging.yml")
+	loader.Namespace("logging.json")
+	if le := loader.Build().Load(target); nil != le {
+		err = le
+	} else {
+		loaded = true
+	}
 
 	return
 }

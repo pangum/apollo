@@ -3,9 +3,12 @@ module github.com/pangum/apollo
 go 1.23
 
 require (
+	github.com/goexl/apollo v0.0.2
+	github.com/goexl/config v0.0.5
+	github.com/goexl/http v0.2.0
+	github.com/goexl/log v0.0.7
 	github.com/pangum/config v0.0.9
 	github.com/pangum/pangu v1.4.4
-	github.com/philchia/agollo/v4 v4.1.5
 )
 
 require (
@@ -16,12 +19,12 @@ require (
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.22.1 // indirect
+	github.com/go-resty/resty/v2 v2.14.0 // indirect
 	github.com/goexl/baozheng v0.0.1 // indirect
 	github.com/goexl/env v0.0.2 // indirect
 	github.com/goexl/exception v0.0.1 // indirect
 	github.com/goexl/gfx v0.2.3 // indirect
 	github.com/goexl/gox v1.8.7 // indirect
-	github.com/goexl/log v0.0.7 // indirect
 	github.com/goexl/mengpo v0.2.6 // indirect
 	github.com/goexl/structer v0.1.8 // indirect
 	github.com/goexl/xiren v0.0.7 // indirect
@@ -30,6 +33,7 @@ require (
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
+	github.com/pelletier/go-toml/v2 v2.2.3 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/rs/xid v1.6.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
@@ -41,4 +45,5 @@ require (
 	golang.org/x/net v0.29.0 // indirect
 	golang.org/x/sys v0.25.0 // indirect
 	golang.org/x/text v0.18.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
