@@ -7,7 +7,7 @@ require (
 	github.com/goexl/config v0.0.5
 	github.com/goexl/http v0.2.0
 	github.com/goexl/log v0.0.7
-	github.com/pangum/config v0.0.9
+	github.com/pangum/config v0.1.0
 	github.com/pangum/pangu v1.4.4
 )
 
