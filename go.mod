@@ -3,8 +3,9 @@ module github.com/pangum/apollo
 go 1.23
 
 require (
-	github.com/goexl/apollo v0.0.2
+	github.com/goexl/apollo v0.0.4
 	github.com/goexl/config v0.0.5
+	github.com/goexl/gox v1.8.9
 	github.com/goexl/http v0.2.0
 	github.com/goexl/log v0.0.7
 	github.com/pangum/config v0.1.0
@@ -19,17 +20,17 @@ require (
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.22.1 // indirect
-	github.com/go-resty/resty/v2 v2.14.0 // indirect
+	github.com/go-resty/resty/v2 v2.15.1 // indirect
 	github.com/goexl/baozheng v0.0.1 // indirect
 	github.com/goexl/env v0.0.2 // indirect
 	github.com/goexl/exception v0.0.1 // indirect
 	github.com/goexl/gfx v0.2.3 // indirect
-	github.com/goexl/gox v1.8.7 // indirect
 	github.com/goexl/mengpo v0.2.6 // indirect
 	github.com/goexl/structer v0.1.8 // indirect
-	github.com/goexl/xiren v0.0.7 // indirect
+	github.com/goexl/xiren v0.0.8 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
+	github.com/magiconair/properties v1.8.7 // indirect
 	github.com/mattn/go-runewidth v0.0.16 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect

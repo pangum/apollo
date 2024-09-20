@@ -2,8 +2,10 @@ package core
 
 import (
 	"context"
+	"fmt"
 
 	"github.com/goexl/apollo"
+	"github.com/goexl/gox"
 	"github.com/pangum/config"
 )
 
@@ -29,12 +31,20 @@ func (*Loader) Extensions() []string {
 	}
 }
 
-func (l *Loader) Load(ctx context.Context, target *map[string]any) (loaded bool, err error) {
+func (l *Loader) Load(ctx context.Context, target *map[string]any, modules []string) (loaded bool, err error) {
 	loader := l.client.Loader().Context(ctx)
 	loader.Namespace("application") // 默认命令空间
-	loader.Namespace("logging.yaml")
-	loader.Namespace("logging.yml")
-	loader.Namespace("logging.json")
+
+	namespaces := make(map[string]*gox.Empty)
+	for _, module := range modules {
+		namespaces[module] = nil
+		namespaces[fmt.Sprintf("%s.yaml", module)] = nil
+		namespaces[fmt.Sprintf("%s.yml", module)] = nil
+		namespaces[fmt.Sprintf("%s.json", module)] = nil
+	}
+	for namespace := range namespaces {
+		loader.Namespace(namespace)
+	}
 	if le := loader.Build().Load(target); nil != le {
 		err = le
 	} else {

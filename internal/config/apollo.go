@@ -6,7 +6,7 @@ import (
 
 type Apollo struct {
 	// 配置端点
-	Meta string `json:"endpoint,omitempty" validate:"required,url"`
+	Meta string `json:"meta,omitempty" validate:"required,url"`
 	// 应用
 	Appid string `json:"appid,omitempty" validate:"required"`
 	// 集群
