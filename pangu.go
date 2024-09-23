@@ -1,4 +1,4 @@
-package starter
+package apollo
 
 import (
 	"github.com/pangum/apollo/internal/plugin"
