@@ -5,7 +5,7 @@ go 1.23
 require (
 	github.com/goexl/apollo v0.0.4
 	github.com/goexl/config v0.0.5
-	github.com/goexl/gox v1.9.0
+	github.com/goexl/gox v1.9.1
 	github.com/goexl/http v0.2.1
 	github.com/goexl/log v0.0.7
 	github.com/pangum/config v0.1.0
