@@ -1,13 +1,12 @@
 module github.com/pangum/apollo
 
-go 1.23
-toolchain go1.24.1
+go 1.25.0
 
 require (
 	github.com/goexl/apollo v0.0.4
 	github.com/goexl/config v0.0.5
 	github.com/goexl/gox v1.9.2
-	github.com/goexl/http v0.2.1
+	github.com/goexl/http v0.3.1
 	github.com/goexl/log v0.0.9
 	github.com/pangum/config v0.1.0
 	github.com/pangum/pangu v1.6.3
@@ -21,7 +20,7 @@ require (
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.26.0 // indirect
-	github.com/go-resty/resty/v2 v2.15.3 // indirect
+	github.com/go-resty/resty/v2 v2.17.2 // indirect
 	github.com/goexl/baozheng v0.0.1 // indirect
 	github.com/goexl/env v0.0.2 // indirect
 	github.com/goexl/exception v0.0.3 // indirect
@@ -43,9 +42,9 @@ require (
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/zs5460/art v0.3.0 // indirect
 	go.uber.org/dig v1.18.1 // indirect
-	golang.org/x/crypto v0.37.0 // indirect
-	golang.org/x/net v0.39.0 // indirect
-	golang.org/x/sys v0.32.0 // indirect
-	golang.org/x/text v0.24.0 // indirect
+	golang.org/x/crypto v0.49.0 // indirect
+	golang.org/x/net v0.52.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
+	golang.org/x/text v0.35.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
