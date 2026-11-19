@@ -1,12 +1,12 @@
 module github.com/pangum/apollo
 
-go 1.25.0
+go 1.27
 
 require (
 	github.com/goexl/apollo v0.0.4
 	github.com/goexl/config v0.0.5
-	github.com/goexl/gox v1.9.2
-	github.com/goexl/http v0.3.1
+	github.com/goexl/gox v1.9.3
+	github.com/goexl/http v0.3.5
 	github.com/goexl/log v0.1.0
 	github.com/pangum/config v0.1.0
 	github.com/pangum/pangu v1.6.3
@@ -42,9 +42,9 @@ require (
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 	github.com/zs5460/art v0.3.0 // indirect
 	go.uber.org/dig v1.18.1 // indirect
-	golang.org/x/crypto v0.49.0 // indirect
-	golang.org/x/net v0.52.0 // indirect
-	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.35.0 // indirect
+	golang.org/x/crypto v0.54.0 // indirect
+	golang.org/x/net v0.57.0 // indirect
+	golang.org/x/sys v0.47.0 // indirect
+	golang.org/x/text v0.40.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
